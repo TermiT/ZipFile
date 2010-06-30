@@ -1,0 +1,53 @@
+Credits
+=======
+
+Based on ZipArchive: http://code.google.com/p/ziparchive/ 
+
+Build
+=====
+
+Just run ./build.py
+
+Install
+=======
+
+1.Download or build from source ZipFile module.
+2.Place zipfile-iphone-x.y.z.zip file to /Library/Application Support/Titanium and unzip it.
+
+How to use
+==========
+
+1.Register ZipFile module with your application by editing `tiapp.xml` and adding your module.
+
+<modules>
+	<module version="x.y.z">zipfile</module>
+</modules>
+
+2. Call Ti.ZipFile.extract(path_to_zip_file, dir_to_extract)
+
+Example
+=======
+
+	//app.js: download zip from DropBox to Documents folder and extact file to Documents folder
+
+	Titanium.UI.setBackgroundColor('#000');
+
+	var win1 = Titanium.UI.createWindow({  
+	    title:'ZipFile test',
+	    backgroundColor:'#fff'
+	});
+
+	win1.open();
+	var xhr = Titanium.Network.createHTTPClient();
+
+	xhr.onload = function()
+	{
+		var f = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,'test.zip');
+		f.write(this.responseData);
+		var test = Ti.ZipFile;
+		Ti.API.log('INFO',Ti.Filesystem.applicationDataDirectory);
+		Ti.ZipFile.extract(Ti.Filesystem.applicationDataDirectory+'/test.zip', Ti.Filesystem.applicationDataDirectory);
+	};
+	xhr.open('GET','http://dl.dropbox.com/u/1400234/test.zip');
+	xhr.send();
+
