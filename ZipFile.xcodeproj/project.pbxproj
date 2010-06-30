@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24DD6CF91134B3F500162E58 /* ZipFileModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* ZipFileModule.h */; };
-		24DD6CFA1134B3F500162E58 /* ZipFileMoudule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ZipFileMoudule.m */; };
+		24DD6CFA1134B3F500162E58 /* ZipFileModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ZipFileModule.m */; };
 		8C7D174511D8E9A1001C1E41 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7D174311D8E9A1001C1E41 /* ZipArchive.h */; };
 		8C7D174611D8E9A1001C1E41 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D174411D8E9A1001C1E41 /* ZipArchive.mm */; };
 		8C7D175111D8E9C2001C1E41 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7D174811D8E9C2001C1E41 /* crypt.h */; };
@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		24DD6CF71134B3F500162E58 /* ZipFileModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipFileModule.h; path = Classes/ZipFileModule.h; sourceTree = "<group>"; };
-		24DD6CF81134B3F500162E58 /* ZipFileMoudule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZipFileMoudule.m; path = Classes/ZipFileMoudule.m; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* ZipFileModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZipFileModule.m; path = Classes/ZipFileModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		8C7D174311D8E9A1001C1E41 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
 		8C7D174411D8E9A1001C1E41 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				8C7D174311D8E9A1001C1E41 /* ZipArchive.h */,
 				8C7D174411D8E9A1001C1E41 /* ZipArchive.mm */,
 				24DD6CF71134B3F500162E58 /* ZipFileModule.h */,
-				24DD6CF81134B3F500162E58 /* ZipFileMoudule.m */,
+				24DD6CF81134B3F500162E58 /* ZipFileModule.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -185,7 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24DD6CFA1134B3F500162E58 /* ZipFileMoudule.m in Sources */,
+				24DD6CFA1134B3F500162E58 /* ZipFileModule.m in Sources */,
 				8C7D174611D8E9A1001C1E41 /* ZipArchive.mm in Sources */,
 				8C7D175211D8E9C2001C1E41 /* ioapi.c in Sources */,
 				8C7D175411D8E9C2001C1E41 /* mztools.c in Sources */,

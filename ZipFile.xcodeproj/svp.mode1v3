@@ -313,7 +313,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ZipFileMoudule.m</string>
+								<string>ZipFileModule.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -321,20 +321,21 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ZipFileMoudule.m</string>
+										<string>ZipFileModule.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8CDFC9D111DB835A00A6EFCA</string>
+										<string>8CDFC9DC11DB883F00A6EFCA</string>
 										<key>history</key>
 										<array>
 											<string>8C7D178A11D9132B001C1E41</string>
-											<string>8C84CFDE11DB65C2003933C6</string>
 											<string>8C84CFDF11DB65C2003933C6</string>
 											<string>8C84CFE011DB65C2003933C6</string>
 											<string>8C84CFE111DB65C2003933C6</string>
 											<string>8C84CFE211DB65C2003933C6</string>
-											<string>8C84CFF911DB81FB003933C6</string>
+											<string>8CDFC9D911DB883F00A6EFCA</string>
+											<string>8CDFC9DA11DB883F00A6EFCA</string>
+											<string>8CDFC9DB11DB883F00A6EFCA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

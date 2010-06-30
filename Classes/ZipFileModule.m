@@ -19,7 +19,7 @@
 	// you *must* call the superclass
 	[super startup];
 	
-	NSLog(@"[INFO] %@ loaded",self);
+	NSLog(@"[DEBUG] %@ loaded",self);
 }
 
 -(void)shutdown:(id)sender
@@ -49,7 +49,6 @@
 	[super didReceiveMemoryWarning:notification];
 }
 
-
 #pragma mark Listener Notifications
 
 -(void)_listenerAdded:(NSString *)type count:(int)count
@@ -73,34 +72,34 @@
 
 #pragma Public APIs
 
--(void)extract:(id)args
+-(void)open:(id)args
 {
 	NSString *file = [args objectAtIndex:0];
 	NSString *path = [args objectAtIndex:1];
-		
+	
+	
 	NSFileManager *fileManager = [NSFileManager defaultManager];
 		
-	if([fileManager fileExistsAtPath:file]) {
-		NSLog(@"[INFO] File exists at path");
-	} else {
-		NSLog(@"[INFO] File does not exists at path");
+	if(![fileManager fileExistsAtPath:file]) {
+		NSLog(@"[DEBUG] Can't find zip file");
 	}
 	
-	ZipArchive* zipArchive = [[ZipArchive alloc] init];
+	
+	ZipArchive *zipArchive = [[ZipArchive alloc] init];
 	if([zipArchive UnzipOpenFile:file]) {
-		NSLog(@"[INFO] zip opened");
+		NSLog(@"[DEBUG] zip opened");
 		BOOL ret = [zipArchive UnzipFileTo:path overWrite: YES];
 		if (NO == ret){
-			NSLog(@"[INFO] failed to unzip");
+			NSLog(@"[DEBUG] failed to unzip");
 		} else {
-			NSLog(@"[INFO] file unziped");
+			NSLog(@"[DEBUG] file unziped");
 		}
 		[zipArchive UnzipCloseFile];
-		[fileManager removeItemAtPath:file error:nil];
+		[fileManager removeItemAtPath:file error:NULL];
 	} else  {
-		NSLog(@"[INFO] can't open zip %@");
+		NSLog(@"[DEBUG] can't open zip");
 	}
-	[ZipArchive release];
+	[zipArchive release];	
 	[fileManager release];
 }
 
