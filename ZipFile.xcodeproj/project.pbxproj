@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24DD6CF91134B3F500162E58 /* ZipFileModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* ZipFileModule.h */; };
+		24DD6CFA1134B3F500162E58 /* ZipFileMoudule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ZipFileMoudule.m */; };
+		8C7D174511D8E9A1001C1E41 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7D174311D8E9A1001C1E41 /* ZipArchive.h */; };
+		8C7D174611D8E9A1001C1E41 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D174411D8E9A1001C1E41 /* ZipArchive.mm */; };
+		8C7D175111D8E9C2001C1E41 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7D174811D8E9C2001C1E41 /* crypt.h */; };
+		8C7D175211D8E9C2001C1E41 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D174911D8E9C2001C1E41 /* ioapi.c */; };
+		8C7D175311D8E9C2001C1E41 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7D174A11D8E9C2001C1E41 /* ioapi.h */; };
+		8C7D175411D8E9C2001C1E41 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D174B11D8E9C2001C1E41 /* mztools.c */; };
+		8C7D175511D8E9C2001C1E41 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7D174C11D8E9C2001C1E41 /* mztools.h */; };
+		8C7D175611D8E9C2001C1E41 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D174D11D8E9C2001C1E41 /* unzip.c */; };
+		8C7D175711D8E9C2001C1E41 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7D174E11D8E9C2001C1E41 /* unzip.h */; };
+		8C7D175811D8E9C2001C1E41 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D174F11D8E9C2001C1E41 /* zip.c */; };
+		8C7D175911D8E9C2001C1E41 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7D175011D8E9C2001C1E41 /* zip.h */; };
+		8C7D175C11D8F10D001C1E41 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7D175B11D8F10D001C1E41 /* libz.1.2.3.dylib */; };
+		AA747D9F0F9514B9006C5449 /* ZipFile_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ZipFile_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* ZipFileModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipFileModule.h; path = Classes/ZipFileModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* ZipFileMoudule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZipFileMoudule.m; path = Classes/ZipFileMoudule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		8C7D174311D8E9A1001C1E41 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		8C7D174411D8E9A1001C1E41 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		8C7D174811D8E9C2001C1E41 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		8C7D174911D8E9C2001C1E41 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		8C7D174A11D8E9C2001C1E41 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		8C7D174B11D8E9C2001C1E41 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		8C7D174C11D8E9C2001C1E41 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		8C7D174D11D8E9C2001C1E41 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		8C7D174E11D8E9C2001C1E41 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		8C7D174F11D8E9C2001C1E41 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		8C7D175011D8E9C2001C1E41 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		8C7D175B11D8F10D001C1E41 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		AA747D9E0F9514B9006C5449 /* ZipFile_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipFile_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libZipFile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZipFile.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				8C7D175C11D8F10D001C1E41 /* libz.1.2.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libZipFile.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ZipFile */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				8C7D175B11D8F10D001C1E41 /* libz.1.2.3.dylib */,
+			);
+			name = ZipFile;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D174711D8E9C2001C1E41 /* minizip */,
+				8C7D174311D8E9A1001C1E41 /* ZipArchive.h */,
+				8C7D174411D8E9A1001C1E41 /* ZipArchive.mm */,
+				24DD6CF71134B3F500162E58 /* ZipFileModule.h */,
+				24DD6CF81134B3F500162E58 /* ZipFileMoudule.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* ZipFile_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		8C7D174711D8E9C2001C1E41 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D174811D8E9C2001C1E41 /* crypt.h */,
+				8C7D174911D8E9C2001C1E41 /* ioapi.c */,
+				8C7D174A11D8E9C2001C1E41 /* ioapi.h */,
+				8C7D174B11D8E9C2001C1E41 /* mztools.c */,
+				8C7D174C11D8E9C2001C1E41 /* mztools.h */,
+				8C7D174D11D8E9C2001C1E41 /* unzip.c */,
+				8C7D174E11D8E9C2001C1E41 /* unzip.h */,
+				8C7D174F11D8E9C2001C1E41 /* zip.c */,
+				8C7D175011D8E9C2001C1E41 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* ZipFile_Prefix.pch in Headers */,
+				24DD6CF91134B3F500162E58 /* ZipFileModule.h in Headers */,
+				8C7D174511D8E9A1001C1E41 /* ZipArchive.h in Headers */,
+				8C7D175111D8E9C2001C1E41 /* crypt.h in Headers */,
+				8C7D175311D8E9C2001C1E41 /* ioapi.h in Headers */,
+				8C7D175511D8E9C2001C1E41 /* mztools.h in Headers */,
+				8C7D175711D8E9C2001C1E41 /* unzip.h in Headers */,
+				8C7D175911D8E9C2001C1E41 /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* ZipFile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ZipFile" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipFile;
+			productName = ZipFile;
+			productReference = D2AAC07E0554694100DB518D /* libZipFile.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ZipFile" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* ZipFile */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* ZipFile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DD6CFA1134B3F500162E58 /* ZipFileMoudule.m in Sources */,
+				8C7D174611D8E9A1001C1E41 /* ZipArchive.mm in Sources */,
+				8C7D175211D8E9C2001C1E41 /* ioapi.c in Sources */,
+				8C7D175411D8E9C2001C1E41 /* mztools.c in Sources */,
+				8C7D175611D8E9C2001C1E41 /* unzip.c in Sources */,
+				8C7D175811D8E9C2001C1E41 /* zip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/ZipFile.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZipFile_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = ZipFile;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/ZipFile.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZipFile_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = ZipFile;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ZipFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ZipFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

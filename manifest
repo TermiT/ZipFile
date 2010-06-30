@@ -1,0 +1,15 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+name: ZipFile
+moduleid: com.generalarcade.ZipFile
+version: 0.1.16
+description: Based on ZipArchive (MiniZip)
+author: Gennadiy Potapov
+license: MIT License
+copyright: Copyright (c) 2010 by General Arcade
+platform: iphone
+minsdk: 1.2.0
+depends: database
+
