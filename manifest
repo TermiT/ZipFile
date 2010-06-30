@@ -4,7 +4,7 @@
 #
 name: ZipFile
 moduleid: com.generalarcade.ZipFile
-version: 0.1.16
+version: 0.1.17
 description: Based on ZipArchive (MiniZip)
 author: Gennadiy Potapov
 license: MIT License

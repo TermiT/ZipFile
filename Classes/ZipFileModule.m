@@ -72,7 +72,7 @@
 
 #pragma Public APIs
 
--(void)open:(id)args
+-(void)extract:(id)args
 {
 	NSString *file = [args objectAtIndex:0];
 	NSString *path = [args objectAtIndex:1];

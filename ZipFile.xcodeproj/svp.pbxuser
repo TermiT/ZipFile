@@ -6,8 +6,34 @@
 		addToTargets = (
 			D2AAC07D0554694100DB518D /* ZipFile */,
 		);
+		breakpoints = (
+		);
 		codeSenseManager = 8C7D174211D8E899001C1E41 /* Code sense */;
 		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
@@ -27,7 +53,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					577,
+					315,
 					20,
 					48,
 					43,
@@ -94,23 +120,21 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 299598680;
-			PBXWorkspaceStateSaveDate = 299598680;
+			PBXPerProjectTemplateStateSaveDate = 299608238;
+			PBXWorkspaceStateSaveDate = 299608238;
 		};
 		perUserProjectItems = {
+			8C24678E11DBA8B600A0EDE8 /* PBXTextBookmark */ = 8C24678E11DBA8B600A0EDE8 /* PBXTextBookmark */;
+			8C24679411DBA8D100A0EDE8 /* PBXTextBookmark */ = 8C24679411DBA8D100A0EDE8 /* PBXTextBookmark */;
 			8C7D178A11D9132B001C1E41 = 8C7D178A11D9132B001C1E41 /* PBXTextBookmark */;
-			8C84CFDE11DB65C2003933C6 = 8C84CFDE11DB65C2003933C6 /* PBXTextBookmark */;
 			8C84CFDF11DB65C2003933C6 = 8C84CFDF11DB65C2003933C6 /* PBXTextBookmark */;
 			8C84CFE011DB65C2003933C6 = 8C84CFE011DB65C2003933C6 /* PBXTextBookmark */;
 			8C84CFE111DB65C2003933C6 = 8C84CFE111DB65C2003933C6 /* PBXTextBookmark */;
 			8C84CFE211DB65C2003933C6 = 8C84CFE211DB65C2003933C6 /* PBXTextBookmark */;
-			8C84CFEC11DB76B0003933C6 = 8C84CFEC11DB76B0003933C6 /* PBXTextBookmark */;
-			8C84CFF911DB81FB003933C6 = 8C84CFF911DB81FB003933C6 /* PBXTextBookmark */;
-			8CDFC9D111DB835A00A6EFCA /* PBXTextBookmark */ = 8CDFC9D111DB835A00A6EFCA /* PBXTextBookmark */;
-			8CDFC9D911DB883F00A6EFCA /* PBXTextBookmark */ = 8CDFC9D911DB883F00A6EFCA /* PBXTextBookmark */;
-			8CDFC9DA11DB883F00A6EFCA /* PBXTextBookmark */ = 8CDFC9DA11DB883F00A6EFCA /* PBXTextBookmark */;
-			8CDFC9DB11DB883F00A6EFCA /* PBXTextBookmark */ = 8CDFC9DB11DB883F00A6EFCA /* PBXTextBookmark */;
-			8CDFC9DC11DB883F00A6EFCA /* PBXTextBookmark */ = 8CDFC9DC11DB883F00A6EFCA /* PBXTextBookmark */;
+			8CDFC9D911DB883F00A6EFCA = 8CDFC9D911DB883F00A6EFCA /* PBXTextBookmark */;
+			8CDFC9DA11DB883F00A6EFCA = 8CDFC9DA11DB883F00A6EFCA /* PBXTextBookmark */;
+			8CDFC9DB11DB883F00A6EFCA = 8CDFC9DB11DB883F00A6EFCA /* PBXTextBookmark */;
+			8CDFC9DF11DB912C00A6EFCA = 8CDFC9DF11DB912C00A6EFCA /* PBXTextBookmark */;
 		};
 		sourceControlManager = 8C7D174111D8E899001C1E41 /* Source Control */;
 		userBuildSettings = {
@@ -126,11 +150,28 @@
 	};
 	24DD6CF81134B3F500162E58 /* ZipFileModule.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {755, 1352}}";
-			sepNavSelRange = "{2194, 0}";
-			sepNavVisRange = "{1904, 571}";
+			sepNavIntBoundsRect = "{{0, 0}, {755, 1378}}";
+			sepNavSelRange = "{1745, 0}";
+			sepNavVisRange = "{1464, 630}";
 			sepNavWindowFrame = "{{15, 183}, {750, 558}}";
 		};
+	};
+	8C24678E11DBA8B600A0EDE8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 24DD6CF81134B3F500162E58 /* ZipFileModule.m */;
+		rLen = 1;
+		rLoc = 85;
+		rType = 1;
+	};
+	8C24679411DBA8D100A0EDE8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 24DD6CF81134B3F500162E58 /* ZipFileModule.m */;
+		name = "ZipFileModule.m: 75";
+		rLen = 0;
+		rLoc = 1745;
+		rType = 0;
+		vrLen = 630;
+		vrLoc = 1464;
 	};
 	8C7D174111D8E899001C1E41 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -198,16 +239,6 @@
 		vrLen = 648;
 		vrLoc = 0;
 	};
-	8C84CFDE11DB65C2003933C6 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 24DD6CF71134B3F500162E58 /* ZipFileModule.h */;
-		name = "ZipFileModule.h: 10";
-		rLen = 0;
-		rLoc = 220;
-		rType = 0;
-		vrLen = 261;
-		vrLoc = 0;
-	};
 	8C84CFDF11DB65C2003933C6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 8C7D174411D8E9A1001C1E41 /* ZipArchive.mm */;
@@ -248,36 +279,6 @@
 		vrLen = 1047;
 		vrLoc = 0;
 	};
-	8C84CFEC11DB76B0003933C6 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 24DD6CF81134B3F500162E58 /* ZipFileModule.m */;
-		name = "ZipFileMoudule.m: 105";
-		rLen = 0;
-		rLoc = 2475;
-		rType = 0;
-		vrLen = 594;
-		vrLoc = 1881;
-	};
-	8C84CFF911DB81FB003933C6 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 24DD6CF81134B3F500162E58 /* ZipFileModule.m */;
-		name = "ZipFileMoudule.m: 103";
-		rLen = 0;
-		rLoc = 2466;
-		rType = 0;
-		vrLen = 568;
-		vrLoc = 1907;
-	};
-	8CDFC9D111DB835A00A6EFCA /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 24DD6CF81134B3F500162E58 /* ZipFileModule.m */;
-		name = "ZipFileMoudule.m: 103";
-		rLen = 0;
-		rLoc = 2466;
-		rType = 0;
-		vrLen = 568;
-		vrLoc = 1907;
-	};
 	8CDFC9D911DB883F00A6EFCA /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 8C7D174D11D8E9C2001C1E41 /* unzip.c */;
@@ -303,20 +304,20 @@
 		fRef = 24DD6CF81134B3F500162E58 /* ZipFileModule.m */;
 		name = "ZipFileMoudule.m: 103";
 		rLen = 0;
-		rLoc = 2466;
+		rLoc = 2469;
 		rType = 0;
 		vrLen = 571;
 		vrLoc = 1904;
 	};
-	8CDFC9DC11DB883F00A6EFCA /* PBXTextBookmark */ = {
+	8CDFC9DF11DB912C00A6EFCA /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 24DD6CF81134B3F500162E58 /* ZipFileModule.m */;
-		name = "ZipFileModule.m: 92";
-		rLen = 0;
-		rLoc = 2194;
+		name = "ZipFileModule.m: 77";
+		rLen = 712;
+		rLoc = 1757;
 		rType = 0;
-		vrLen = 571;
-		vrLoc = 1904;
+		vrLen = 610;
+		vrLoc = 1709;
 	};
 	D2AAC07D0554694100DB518D /* ZipFile */ = {
 		activeExec = 0;
