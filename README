@@ -44,7 +44,6 @@ Example
 	{
 		var f = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,'test.zip');
 		f.write(this.responseData);
-		var test = Ti.ZipFile;
 		Ti.API.log('INFO',Ti.Filesystem.applicationDataDirectory);
 		Ti.ZipFile.extract(Ti.Filesystem.applicationDataDirectory+'/test.zip', Ti.Filesystem.applicationDataDirectory);
 	};
