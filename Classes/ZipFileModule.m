@@ -100,7 +100,6 @@
 		NSLog(@"[DEBUG] can't open zip");
 	}
 	[zipArchive release];	
-	[fileManager release];
 }
 
 @end
