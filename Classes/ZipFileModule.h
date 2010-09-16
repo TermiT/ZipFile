@@ -11,5 +11,13 @@
 {
 
 }
+@end
+
+@interface ZipFileProxy : TiProxy {
+@private
+    ZipArchive *zipArchive;
+}
+
+-(id)initWithFile:(NSString*)path_;
 
 @end
