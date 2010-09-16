@@ -53,21 +53,21 @@
 
 -(void)_listenerAdded:(NSString *)type count:(int)count
 {
-	if (count == 1 && [type isEqualToString:@"my_event"])
-	{
-		// the first (of potentially many) listener is being added 
-		// for event named 'my_event'
-	}
+	// if (count == 1 && [type isEqualToString:@"my_event"])
+	// {
+	// 	// the first (of potentially many) listener is being added 
+	// 	// for event named 'my_event'
+	// }
 }
 
 -(void)_listenerRemoved:(NSString *)type count:(int)count
 {
-	if (count == 0 && [type isEqualToString:@"my_event"])
-	{
-		// the last listener called for event named 'my_event' has
-		// been removed, we can optionally clean up any resources
-		// since no body is listening at this point for that event
-	}
+	// if (count == 0 && [type isEqualToString:@"my_event"])
+	// {
+	// 	// the last listener called for event named 'my_event' has
+	// 	// been removed, we can optionally clean up any resources
+	// 	// since no body is listening at this point for that event
+	// }
 }
 
 #pragma Public APIs
