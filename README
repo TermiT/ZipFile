@@ -50,3 +50,9 @@ Example
 	xhr.open('GET','http://dl.dropbox.com/u/1400234/test.zip');
 	xhr.send();
 
+Creation Example
+================
+
+        var zip = Ti.ZipFile.create("/path/to/zip/as/string");
+        zip.addFile("/path/to/file/to/add", "path/in/zip/file");
+        zip.close();

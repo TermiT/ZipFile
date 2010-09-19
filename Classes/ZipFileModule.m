@@ -53,21 +53,21 @@
 
 -(void)_listenerAdded:(NSString *)type count:(int)count
 {
-	if (count == 1 && [type isEqualToString:@"my_event"])
-	{
-		// the first (of potentially many) listener is being added 
-		// for event named 'my_event'
-	}
+	// if (count == 1 && [type isEqualToString:@"my_event"])
+	// {
+	// 	// the first (of potentially many) listener is being added 
+	// 	// for event named 'my_event'
+	// }
 }
 
 -(void)_listenerRemoved:(NSString *)type count:(int)count
 {
-	if (count == 0 && [type isEqualToString:@"my_event"])
-	{
-		// the last listener called for event named 'my_event' has
-		// been removed, we can optionally clean up any resources
-		// since no body is listening at this point for that event
-	}
+	// if (count == 0 && [type isEqualToString:@"my_event"])
+	// {
+	// 	// the last listener called for event named 'my_event' has
+	// 	// been removed, we can optionally clean up any resources
+	// 	// since no body is listening at this point for that event
+	// }
 }
 
 #pragma Public APIs
@@ -100,6 +100,63 @@
 		NSLog(@"[DEBUG] can't open zip");
 	}
 	[zipArchive release];	
+}
+
+-(id)create:(id)args
+{
+    NSString *path = [args objectAtIndex:0];
+    ZipFileProxy *z = [[ZipFileProxy alloc] initWithFile:path];
+    if (z) {
+        return z;
+    } else {
+        return nil;
+    }
+}
+
+@end
+
+@implementation ZipFileProxy
+
+-(id)initWithFile:(NSString*)path
+{
+    if (self = [super init]) {
+        zipArchive = [[ZipArchive alloc] init];
+        if ([zipArchive CreateZipFile2:path]) {
+            NSLog(@"[DEBUG] zip opened");
+        } else {
+            NSLog(@"[DEBUG] could'nt create zip");
+            [zipArchive release];
+            zipArchive = nil;
+            return nil;
+        }            
+    }
+    return self;
+}
+
+-(id)addFile:(id)args
+{
+    NSString *path = [args objectAtIndex:0];
+    NSString *newName = [args objectAtIndex:1];
+
+    //NSLog(@"[DEBUG] add %@ to zip as %@", path, newName);
+    return NUMBOOL([zipArchive addFileToZip:path newname:newName]);
+}
+
+// theoretically this should just be done on dealloc, but for some reason the
+// proxy in my test function is not being deallocated
+-(void)close:(id)args
+{
+    NSLog(@"[DEBUG] close zip");
+    if (zipArchive) {
+        [zipArchive CloseZipFile2];
+        [zipArchive release];
+    }
+}
+
+-(void)dealloc
+{
+    NSLog(@"[DEBUG] dealloc zip");
+    [super dealloc];
 }
 
 @end
