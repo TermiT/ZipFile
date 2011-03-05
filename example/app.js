@@ -1,27 +1,26 @@
-// This is a test harness for your module
-// You should do something interesting in this harness 
-// to test out the module and to provide instructions 
-// to users on how to use it by example.
+Titanium.UI.setBackgroundColor('#000');
 
+var zipfile = require("zipfile"); 
 
-// open a single window
-var window = Ti.UI.createWindow({
-	backgroundColor:'white'
+var win1 = Titanium.UI.createWindow({  
+    title:'ZipFile test',
+    backgroundColor:'#fff'
 });
-var label = Ti.UI.createLabel();
-window.add(label);
-window.open();
 
-// TODO: write your module tests here
-var zipfile = require('zipfile');
-Ti.API.info("module is => " + zipfile);
 
-label.text = zipfile.example();
+// Download a zip file from DropBox and extract content to the app/Documents folder
 
-Ti.API.info("module exampleProp is => " + zipfile.exampleProp);
-zipfile.exampleProp = "This is a test value";
+win1.open();
+var xhr = Titanium.Network.createHTTPClient();
 
-if (Ti.Platform.name == "android") {
-	var proxy = zipfile.createExample({message: "Creating an example Proxy"});
-	proxy.printMessage("Hello world!");
-}
+xhr.onload = function()
+{
+    var f = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,'test.zip');
+    f.write(this.responseData);
+    Ti.API.log('INFO',Ti.Filesystem.applicationDataDirectory);
+    zipfile.extract(Ti.Filesystem.applicationDataDirectory+'/test.zip', Ti.Filesystem.applicationDataDirectory);
+
+};
+xhr.open('GET','http://dl.dropbox.com/u/1400234/test.zip');
+xhr.send();
+
