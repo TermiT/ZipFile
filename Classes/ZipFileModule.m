@@ -4,12 +4,26 @@
  * Appcelerator Titanium is Copyright (c) 2009-2010 by Appcelerator, Inc.
  * and licensed under the Apache Public License (version 2)
  */
-#import "ZipFileModule.h"
+#import "ZipfileModule.h"
 #import "TiBase.h"
 #import "TiHost.h"
 #import "TiUtils.h"
 
-@implementation ZipFileModule
+@implementation ZipfileModule
+
+#pragma mark Internal
+
+// this is generated for your module, please do not change it
+-(id)moduleGUID
+{
+	return @"12bdae7d-5d4b-43b7-bd59-cacecd19756b";
+}
+
+// this is generated for your module, please do not change it
+-(NSString*)moduleId
+{
+	return @"zipfile";
+}
 
 #pragma mark Lifecycle
 
@@ -19,7 +33,7 @@
 	// you *must* call the superclass
 	[super startup];
 	
-	NSLog(@"[DEBUG] %@ loaded",self);
+	NSLog(@"[INFO] %@ loaded",self);
 }
 
 -(void)shutdown:(id)sender
@@ -53,21 +67,21 @@
 
 -(void)_listenerAdded:(NSString *)type count:(int)count
 {
-	// if (count == 1 && [type isEqualToString:@"my_event"])
-	// {
-	// 	// the first (of potentially many) listener is being added 
-	// 	// for event named 'my_event'
-	// }
+	//if (count == 1 && [type isEqualToString:@"my_event"])
+	//{
+		// the first (of potentially many) listener is being added 
+		// for event named 'my_event'
+	//}
 }
 
 -(void)_listenerRemoved:(NSString *)type count:(int)count
 {
-	// if (count == 0 && [type isEqualToString:@"my_event"])
-	// {
-	// 	// the last listener called for event named 'my_event' has
-	// 	// been removed, we can optionally clean up any resources
-	// 	// since no body is listening at this point for that event
-	// }
+	//if (count == 0 && [type isEqualToString:@"my_event"])
+	//{
+		// the last listener called for event named 'my_event' has
+		// been removed, we can optionally clean up any resources
+		// since no body is listening at this point for that event
+	//}
 }
 
 #pragma Public APIs
@@ -79,7 +93,7 @@
 	
 	
 	NSFileManager *fileManager = [NSFileManager defaultManager];
-		
+	
 	if(![fileManager fileExistsAtPath:file]) {
 		NSLog(@"[DEBUG] Can't find zip file");
 	}
@@ -105,7 +119,7 @@
 -(id)create:(id)args
 {
     NSString *path = [args objectAtIndex:0];
-    ZipFileProxy *z = [[ZipFileProxy alloc] initWithFile:path];
+    ZipfileProxy *z = [[ZipfileProxy alloc] initWithFile:path];
     if (z) {
         return z;
     } else {
@@ -115,7 +129,7 @@
 
 @end
 
-@implementation ZipFileProxy
+@implementation ZipfileProxy
 
 -(id)initWithFile:(NSString*)path
 {
@@ -137,7 +151,7 @@
 {
     NSString *path = [args objectAtIndex:0];
     NSString *newName = [args objectAtIndex:1];
-
+	
     //NSLog(@"[DEBUG] add %@ to zip as %@", path, newName);
     return NUMBOOL([zipArchive addFileToZip:path newname:newName]);
 }
