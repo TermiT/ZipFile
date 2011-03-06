@@ -1,8 +1,8 @@
-# zipfile Module
+# zipfile Titanium Module
 
 ## Description
 
-Titanium module to create and extract Zip files
+A simple Titanium module to create and extract Zip files. Requires Titanium SDK version 1.7.0 or above.
 
 ## Accessing the zipfile Module
 
@@ -78,13 +78,13 @@ Zip File Creation Example
 
 Based on ZipArchive: http://code.google.com/p/ziparchive/ 
 
-Created by Gennadiy Potapov
-http://generalarcade.com
-Source : https://github.com/TermiT/ZipFile
+Created by Gennadiy Potapov 
+http://generalarcade.com 
+Source : https://github.com/TermiT/ZipFile 
 
-Updated to Ti SDK 1.7.0 and deprecated fixes of minizip code by Kosso
-http://kosso.co.uk
-Forked Source : https://github.com/kosso/ZipFile
+Updated to Ti SDK 1.7.0 and deprecated fixes of minizip code by Kosso 
+http://kosso.co.uk 
+Forked Source : https://github.com/kosso/ZipFile 
 
 Credits
 =======
