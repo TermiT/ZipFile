@@ -26,23 +26,20 @@ Install
 How to use
 ==========
 
-1.Register the zipfile module with your application by editing 'tiapp.xml' and adding the module:
+Register the zipfile module with your application by editing 'tiapp.xml' and adding the module:
 
 <modules>
 	<module version="0.1.19">zipfile</module>
 </modules>
-
-2. 
-
-	var zipfile = require("zipfile");
-	zipfile.extract(path_to_zip_file, dir_to_extract);
-
 
 
 Zip File Extraction Example
 =======
 
 	//app.js: download zip from DropBox to Documents folder and extact file to Documents folder
+
+	// This loads the module for use in the JavaScript
+	var zipfile = require("zipfile");
 
 	Titanium.UI.setBackgroundColor('#000');
 
@@ -59,7 +56,7 @@ Zip File Extraction Example
 		var f = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,'test.zip');
 		f.write(this.responseData);
 		Ti.API.log('INFO',Ti.Filesystem.applicationDataDirectory);
-		Ti.ZipFile.extract(Ti.Filesystem.applicationDataDirectory+'/test.zip', Ti.Filesystem.applicationDataDirectory);
+		zipfile.extract(Ti.Filesystem.applicationDataDirectory+'/test.zip', Ti.Filesystem.applicationDataDirectory);
 	};
 	xhr.open('GET','http://dl.dropbox.com/u/1400234/test.zip');
 	xhr.send();
@@ -67,6 +64,8 @@ Zip File Extraction Example
 Zip File Creation Example
 ================
 
+		// This loads the module for use in the JavaScript
+		var zipfile = require("zipfile");
 
         var zip = zipfile.create("/path/to/zip/as/string.zip");
         zip.addFile("/path/to/file/to/add/filename", "path/in/zip/filename");
@@ -75,7 +74,6 @@ Zip File Creation Example
 
 ## Author
 
-Based on ZipArchive: http://code.google.com/p/ziparchive/ 
 
 Created by Gennadiy Potapov 
 http://generalarcade.com 
