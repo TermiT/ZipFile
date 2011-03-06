@@ -20,8 +20,11 @@ Just run ./build.py
 Install
 =======
 
-1.Download or build from source zipfile module.
-2.Place zipfile-iphone-x.y.z.zip file to /Library/Application Support/Titanium and unzip it.
+
+	1.Download or build from source zipfile module.
+
+	2.Place zipfile-iphone-x.y.z.zip file to /Library/Application Support/Titanium and unzip it.
+
 
 How to use
 ==========
