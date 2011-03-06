@@ -12,13 +12,6 @@ To access this module from JavaScript, you would do the following:
 
 The zipfile variable is a reference to the Module object.	
 
-## Reference
-
-Credits
-=======
-
-Based on ZipArchive: http://code.google.com/p/ziparchive/ 
-
 Build
 =====
 
@@ -41,12 +34,13 @@ How to use
 
 2. 
 
-var zipfile = require("zipfile");
-zipfile.extract(path_to_zip_file, dir_to_extract)
+
+	var zipfile = require("zipfile");
+	zipfile.extract(path_to_zip_file, dir_to_extract);
 
 
 
-Example
+Zip File Extraction Example
 =======
 
 	//app.js: download zip from DropBox to Documents folder and extact file to Documents folder
@@ -71,7 +65,7 @@ Example
 	xhr.open('GET','http://dl.dropbox.com/u/1400234/test.zip');
 	xhr.send();
 
-Creation Example
+Zip File Creation Example
 ================
 
 
@@ -91,6 +85,11 @@ Source : https://github.com/TermiT/ZipFile
 Updated to Ti SDK 1.7.0 and deprecated fixes of minizip code by Kosso
 http://kosso.co.uk
 Forked Source : https://github.com/kosso/ZipFile
+
+Credits
+=======
+
+Based on ZipArchive: http://code.google.com/p/ziparchive/ 
 
 
 ## License
