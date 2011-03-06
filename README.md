@@ -34,7 +34,6 @@ How to use
 
 2. 
 
-
 	var zipfile = require("zipfile");
 	zipfile.extract(path_to_zip_file, dir_to_extract);
 
