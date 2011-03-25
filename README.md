@@ -82,6 +82,8 @@ Created by Gennadiy Potapov
 http://generalarcade.com 
 Source : https://github.com/TermiT/ZipFile 
 
+Zip creating by Damien Elmes
+
 Updated to Ti SDK 1.7.0 and deprecated fixes of minizip code by Kosso 
 http://kosso.co.uk 
 Forked Source : https://github.com/kosso/ZipFile 
