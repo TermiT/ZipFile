@@ -67,7 +67,7 @@ Zip File Extraction Example
 Zip File Creation Example
 ================
 
-		// This loads the module for use in the JavaScript
+		// This loads the module for use in the JavaScript.
 		var zipfile = require("zipfile");
 
         var zip = zipfile.create("/path/to/zip/as/string.zip");
