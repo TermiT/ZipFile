@@ -32,7 +32,7 @@ How to use
 Register the zipfile module with your application by editing 'tiapp.xml' and adding the module:
 
 <modules>
-	<module version="0.1.19">zipfile</module>
+	<module version="0.1.20">zipfile</module>
 </modules>
 
 
