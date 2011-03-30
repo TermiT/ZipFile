@@ -2,7 +2,7 @@
 
 ## Description
 
-A simple Titanium module to create and extract Zip files. Requires Titanium SDK version 1.7.0 or above.
+A simple Titanium module to create, extract and add to (since 0.1.20) Zip files. Requires Titanium SDK version 1.7.0 or above.
 
 ## Accessing the zipfile Module
 
