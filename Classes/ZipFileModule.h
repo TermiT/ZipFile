@@ -21,5 +21,7 @@
 }
 
 -(id)initWithFile:(NSString*)path_;
+// Kosso added to enable opening an existing zip file to add files to
+-(id)initWithExistingFile:(NSString*)path_;
 
 @end

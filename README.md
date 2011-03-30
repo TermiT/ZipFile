@@ -74,6 +74,16 @@ Zip File Creation Example
         zip.addFile("/path/to/file/to/add/filename", "path/in/zip/filename");
         zip.close();
 
+Zip File Opening Existing Zip File Example
+================
+
+		// This loads the module for use in the JavaScript
+		var zipfile = require("zipfile");
+
+        var zip = zipfile.open("/path/to/zip/as/string.zip");
+        // This will return false if it does not exist. Now, add/update files to it
+        zip.addFile("/path/to/file/to/add/filename", "path/in/zip/filename");
+        zip.close();
 
 ## Author
 

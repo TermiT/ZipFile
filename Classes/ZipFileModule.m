@@ -119,13 +119,26 @@
 -(id)create:(id)args
 {
     NSString *path = [args objectAtIndex:0];
-    ZipfileProxy *z = [[ZipfileProxy alloc] initWithFile:path];
+	ZipfileProxy *z = [[ZipfileProxy alloc] initWithFile:path];
     if (z) {
         return z;
     } else {
         return nil;
     }
 }
+
+// Kosso added to enable opening an existing zip file to add files to
+-(id)open:(id)args
+{
+    NSString *path = [args objectAtIndex:0];
+    ZipfileProxy *z = [[ZipfileProxy alloc] initWithExistingFile:path];
+    if (z) {
+        return z;
+    } else {
+        return nil;
+    }
+}
+
 
 @end
 
@@ -146,6 +159,24 @@
     }
     return self;
 }
+
+// Kosso added to enable opening an existing zip file to add files to
+-(id)initWithExistingFile:(NSString*)path
+{
+    if (self = [super init]) {
+        zipArchive = [[ZipArchive alloc] init];
+        if ([zipArchive OpenZipFile2:path]) {
+            NSLog(@"[DEBUG] zip opened");
+        } else {
+            NSLog(@"[DEBUG] could'nt create zip");
+            [zipArchive release];
+            zipArchive = nil;
+            return nil;
+        }            
+    }
+    return self;
+}
+
 
 -(id)addFile:(id)args
 {

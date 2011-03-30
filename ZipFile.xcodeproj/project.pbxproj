@@ -198,7 +198,7 @@
 			attributes = {
 				ORGANIZATIONNAME = kosso;
 			};
-			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "zipfile" */;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ZipFile" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -359,7 +359,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "zipfile" */ = {
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ZipFile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,

@@ -37,6 +37,8 @@
 @property (nonatomic, retain) id delegate;
 
 -(BOOL) CreateZipFile2:(NSString*) zipFile;
+// Kosso added to enable opening an existing zip to add files to.
+-(BOOL) OpenZipFile2:(NSString*) zipFile;
 -(BOOL) CreateZipFile2:(NSString*) zipFile Password:(NSString*) password;
 -(BOOL) addFileToZip:(NSString*) file newname:(NSString*) newname;
 -(BOOL) CloseZipFile2;

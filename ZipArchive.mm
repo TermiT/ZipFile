@@ -48,6 +48,17 @@
 	return YES;
 }
 
+// Kosso added to set flag for opening existing zip to add files to..
+// Uses the flag: 2 instead of 0
+-(BOOL) OpenZipFile2:(NSString*) zipFile
+{
+	_zipFile = zipOpen( (const char*)[zipFile UTF8String], 2 );
+	if( !_zipFile ) 
+		return NO;
+	return YES;
+}
+
+
 -(BOOL) CreateZipFile2:(NSString*) zipFile Password:(NSString*) password
 {
 	_password = password;
