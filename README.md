@@ -2,7 +2,7 @@
 
 ## Description
 
-A simple Titanium module to create and extract Zip files. Requires Titanium SDK version 1.7.0 or above.
+A simple Titanium module to create, extract and add to (since 0.1.20) Zip files. Requires Titanium SDK version 1.7.0 or above.
 
 ## Accessing the zipfile Module
 
@@ -32,7 +32,7 @@ How to use
 Register the zipfile module with your application by editing 'tiapp.xml' and adding the module:
 
 <modules>
-	<module version="0.1.19">zipfile</module>
+	<module version="0.1.20">zipfile</module>
 </modules>
 
 
@@ -67,13 +67,23 @@ Zip File Extraction Example
 Zip File Creation Example
 ================
 
-		// This loads the module for use in the JavaScript
+		// This loads the module for use in the JavaScript.
 		var zipfile = require("zipfile");
 
         var zip = zipfile.create("/path/to/zip/as/string.zip");
         zip.addFile("/path/to/file/to/add/filename", "path/in/zip/filename");
         zip.close();
 
+Opening Existing Zip File Example For File Addition/Update
+================
+
+		// This loads the module for use in the JavaScript
+		var zipfile = require("zipfile");
+
+        var zip = zipfile.open("/path/to/zip/as/string.zip");
+        // This will return false if it does not exist. Now, add/update files to it
+        zip.addFile("/path/to/file/to/add/filename", "path/in/zip/filename");
+        zip.close();
 
 ## Author
 
