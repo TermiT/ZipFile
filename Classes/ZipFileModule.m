@@ -40,7 +40,7 @@
 {
 	// this method is called when the module is being unloaded
 	// typically this is during shutdown. make sure you don't do too
-	// much processing here or the app will be quit forceably
+	// much processing here or the app will be quit forcibly
 	
 	// you *must* call the superclass
 	[super shutdown:sender];
@@ -90,14 +90,12 @@
 {
 	NSString *file = [args objectAtIndex:0];
 	NSString *path = [args objectAtIndex:1];
-	
-	
+
 	NSFileManager *fileManager = [NSFileManager defaultManager];
 	
 	if(![fileManager fileExistsAtPath:file]) {
 		NSLog(@"[DEBUG] Can't find zip file");
 	}
-	
 	
 	ZipArchive *zipArchive = [[ZipArchive alloc] init];
 	if([zipArchive UnzipOpenFile:file]) {
@@ -106,15 +104,18 @@
 		if (NO == ret){
 			NSLog(@"[DEBUG] failed to unzip");
 		} else {
-			NSLog(@"[DEBUG] file unziped");
+			NSLog(@"[DEBUG] file unzipped");
 		}
 		[zipArchive UnzipCloseFile];
-		[fileManager removeItemAtPath:file error:NULL];
+		// removed deletion of zip file after extraction.
+		// Developer can use Ti.FileSystem.deleteFile if they want to do this.
+		//[fileManager removeItemAtPath:file error:NULL];
 	} else  {
 		NSLog(@"[DEBUG] can't open zip");
 	}
 	[zipArchive release];	
 }
+
 
 -(id)create:(id)args
 {
