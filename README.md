@@ -2,7 +2,7 @@
 
 ## Description
 
-A simple Titanium module to create, extract and add to (since 0.1.20) Zip files. Requires Titanium SDK version 1.7.0 or above.
+A simple Titanium module to create, extract and add to (since 0.1.20) Zip files. Requires Titanium SDK version 1.6.3 or above.
 
 ## Accessing the zipfile Module
 
@@ -92,7 +92,7 @@ Created by Gennadiy Potapov
 http://generalarcade.com 
 Source : https://github.com/TermiT/ZipFile 
 
-Updated to Ti SDK 1.7.0 and deprecated fixes of minizip code by Kosso 
+Updated to Ti SDK 1.6.3 and deprecated fixes of minizip code by Kosso 
 http://kosso.co.uk 
 Forked Source : https://github.com/kosso/ZipFile 
 
