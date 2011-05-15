@@ -4,6 +4,8 @@
 
 A simple Titanium module to create, extract and add to (since 0.1.20) Zip files. Requires Titanium SDK version 1.6.3 or above.
 
+- Removed the automatic deletion of the zip file after extraction. Developer can do this themselves using Ti.FileSystem.deleteFile if they need to.
+
 ## Accessing the zipfile Module
 
 To access this module from JavaScript, you would do the following:
