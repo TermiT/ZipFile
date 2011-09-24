@@ -33,10 +33,11 @@ How to use
 
 Register the zipfile module with your application by editing 'tiapp.xml' and adding the module:
 
+```xml
 <modules>
 	<module version="0.1.20">zipfile</module>
 </modules>
-
+```
 
 Zip File Extraction Example
 =======
