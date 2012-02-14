@@ -17,7 +17,12 @@ The zipfile variable is a reference to the Module object.
 Build
 =====
 
-Just run ./build.py
+Edit the file "titanium.xcconfig" for your current SDK setup. You can find the current TITANIUM_SDK_VERSION by looking in the directory specified by TITANIUM_SDK (depending on your setup, you may also need to change this from /Library/… to ~/Library).
+
+
+Then run:
+	./build.py
+
 
 Install
 =======
