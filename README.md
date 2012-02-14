@@ -2,39 +2,25 @@
 
 ## Description
 
-A simple Titanium module to create, extract and add to (since 0.1.20) Zip files. Requires Titanium SDK version 1.6.3 or above.
-
-- Removed the automatic deletion of the zip file after extraction. Developer can do this themselves using Ti.FileSystem.deleteFile if they need to.
-
-## Accessing the zipfile Module
-
-To access this module from JavaScript, you would do the following:
-
-	var zipfile = require("zipfile");
-
-The zipfile variable is a reference to the Module object.	
-
-Build
-=====
+A simple Titanium module to create, extract and add to (since 0.1.20) zip files. Requires Titanium SDK version 1.6.3 or above.
+	
+## Build
 
 Edit the file "titanium.xcconfig" for your current SDK setup. You can find the current TITANIUM_SDK_VERSION by looking in the directory specified by TITANIUM_SDK (depending on your setup, you may also need to change this from /Library/… to ~/Library).
 
 
 Then run:
+```
 	./build.py
+```
 
+## Install
 
-Install
-=======
+Download or build from source zipfile module.
 
+Put zipfile-iphone-x.y.z.zip into your Titanium Application Support directory (either /Library/Application\ Support/ or ~/Library/Application\ Support/) and unzip it.
 
-	1.Download or build from source zipfile module.
-
-	2.Place zipfile-iphone-x.y.z.zip file to /Library/Application Support/Titanium and unzip it.
-
-
-How to use
-==========
+## How to use
 
 Register the zipfile module with your application by editing 'tiapp.xml' and adding the module:
 
@@ -44,8 +30,7 @@ Register the zipfile module with your application by editing 'tiapp.xml' and add
 </modules>
 ```
 
-Zip File Extraction Example
-=======
+## Zip File Extraction Example
 
 	//app.js: download zip from DropBox to Documents folder and extact file to Documents folder
 
@@ -72,8 +57,7 @@ Zip File Extraction Example
 	xhr.open('GET','http://dl.dropbox.com/u/1400234/test.zip');
 	xhr.send();
 
-Zip File Creation Example
-================
+## Zip File Creation Example
 
 		// This loads the module for use in the JavaScript.
 		var zipfile = require("zipfile");
@@ -82,8 +66,7 @@ Zip File Creation Example
         zip.addFile("/path/to/file/to/add/filename", "path/in/zip/filename");
         zip.close();
 
-Opening Existing Zip File Example For File Addition/Update
-================
+## Opening Existing Zip File Example For File Addition/Update
 
 		// This loads the module for use in the JavaScript
 		var zipfile = require("zipfile");
@@ -95,7 +78,6 @@ Opening Existing Zip File Example For File Addition/Update
 
 ## Author
 
-
 Created by Gennadiy Potapov 
 http://generalarcade.com 
 Source : https://github.com/TermiT/ZipFile 
@@ -106,8 +88,7 @@ Updated to Ti SDK 1.7.0 and deprecated fixes of minizip code by Kosso
 http://kosso.co.uk 
 Forked Source : https://github.com/kosso/ZipFile 
 
-Credits
-=======
+## Credits
 
 Based on ZipArchive: http://code.google.com/p/ziparchive/ 
 
