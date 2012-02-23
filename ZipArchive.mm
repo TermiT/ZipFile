@@ -181,6 +181,8 @@
 	return [self UnzipOpenFile:zipFile];
 }
 
+
+
 -(BOOL) UnzipFileTo:(NSString*) path overWrite:(BOOL) overwrite
 {
 	BOOL success = YES;
@@ -193,6 +195,7 @@
 	}
 	
 	do{
+		NSAutoreleasePool *internalPool = [[NSAutoreleasePool alloc] init];
 		if( [_password length]==0 )
 			ret = unzOpenCurrentFile( _unzFile );
 		else
@@ -301,6 +304,7 @@
 		}
 		unzCloseCurrentFile( _unzFile );
 		ret = unzGoToNextFile( _unzFile );
+		[internalPool drain];
 	}while( ret==UNZ_OK && UNZ_OK!=UNZ_END_OF_LIST_OF_FILE );
 	return success;
 }
