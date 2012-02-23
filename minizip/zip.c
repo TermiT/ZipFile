@@ -9,6 +9,8 @@
    Read zip.h for more info
 */
 
+#define NOCRYPT
+#define NOUNCRYPT
 
 #include <stdio.h>
 #include <stdlib.h>
