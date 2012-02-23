@@ -8,7 +8,6 @@ A simple Titanium module to create, extract and add to (since 0.1.20) zip files.
 
 Edit the file "titanium.xcconfig" for your current SDK setup. You can find the current TITANIUM_SDK_VERSION by looking in the directory specified by TITANIUM_SDK (depending on your setup, you may also need to change this from /Library/… to ~/Library).
 
-
 Then run:
 ```
 	./build.py
@@ -87,6 +86,8 @@ Zip creating by Damien Elmes
 Updated to Ti SDK 1.7.0 and deprecated fixes of minizip code by Kosso 
 http://kosso.co.uk 
 Forked Source : https://github.com/kosso/ZipFile 
+
+All contributors: https://github.com/TermiT/ZipFile/contributors
 
 ## Credits
 
