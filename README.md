@@ -6,7 +6,7 @@ A simple Titanium module to create, extract and add to (since 0.1.20) zip files.
 	
 ## Build
 
-Edit the file "titanium.xcconfig" for your current SDK setup. You can find the current TITANIUM_SDK_VERSION by looking in the directory specified by TITANIUM_SDK (depending on your setup, you may also need to change this from /Library/… to ~/Library).
+Edit the file `titanium.xcconfig` for your current SDK setup. You can find the current `TITANIUM_SDK_VERSION` by looking in the directory specified by `TITANIUM_SDK` (depending on your setup, you may also need to change this from `/Library/…` to `~/Library`).
 
 Then run:
 ```
@@ -17,7 +17,7 @@ Then run:
 
 Download or build from source zipfile module.
 
-Put zipfile-iphone-x.y.z.zip into your Titanium Application Support directory (either /Library/Application\ Support/ or ~/Library/Application\ Support/) and unzip it.
+Put `zipfile-iphone-x.y.z.zip` into your Titanium Application Support directory (either `/Library/Application\ Support/` or `~/Library/Application\ Support/`) and unzip it.
 
 ## How to use
 
