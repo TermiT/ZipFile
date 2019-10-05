@@ -27,16 +27,16 @@
 		3A3806282349388D001CDAED /* ZipfileModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3806262349388D001CDAED /* ZipfileModule.m */; };
 		3A3806292349388D001CDAED /* ZipfileModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A3806272349388D001CDAED /* ZipfileModule.h */; };
 		6AE470781322D68C00B93C90 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE4706F1322D68C00B93C90 /* crypt.h */; };
-		6AE470791322D68C00B93C90 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470701322D68C00B93C90 /* ioapi.c */; };
+		6AE470791322D68C00B93C90 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470701322D68C00B93C90 /* ioapi.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6AE4707A1322D68C00B93C90 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE470711322D68C00B93C90 /* ioapi.h */; };
-		6AE4707B1322D68C00B93C90 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470721322D68C00B93C90 /* mztools.c */; };
+		6AE4707B1322D68C00B93C90 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470721322D68C00B93C90 /* mztools.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6AE4707C1322D68C00B93C90 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE470731322D68C00B93C90 /* mztools.h */; };
-		6AE4707D1322D68C00B93C90 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470741322D68C00B93C90 /* unzip.c */; };
+		6AE4707D1322D68C00B93C90 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470741322D68C00B93C90 /* unzip.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6AE4707E1322D68C00B93C90 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE470751322D68C00B93C90 /* unzip.h */; };
-		6AE4707F1322D68C00B93C90 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470761322D68C00B93C90 /* zip.c */; };
+		6AE4707F1322D68C00B93C90 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470761322D68C00B93C90 /* zip.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6AE470801322D68C00B93C90 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE470771322D68C00B93C90 /* zip.h */; };
 		6AE470831322D69900B93C90 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE470811322D69900B93C90 /* ZipArchive.h */; };
-		6AE470841322D69900B93C90 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470821322D69900B93C90 /* ZipArchive.mm */; };
+		6AE470841322D69900B93C90 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470821322D69900B93C90 /* ZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AA747D9F0F9514B9006C5449 /* Zipfile_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Zipfile_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -305,6 +305,7 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -346,6 +347,7 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;

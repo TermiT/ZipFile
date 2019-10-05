@@ -46,14 +46,6 @@
 	[super shutdown:sender];
 }
 
-#pragma mark Cleanup 
-
--(void)dealloc
-{
-	// release any resources that have been retained by the module
-	[super dealloc];
-}
-
 #pragma mark Internal Memory Management
 
 -(void)didReceiveMemoryWarning:(NSNotification*)notification
@@ -113,7 +105,6 @@
 	} else  {
 		NSLog(@"[DEBUG] can't open zip");
 	}
-	[zipArchive release];	
 }
 
 
@@ -153,8 +144,6 @@
             NSLog(@"[DEBUG] zip opened");
         } else {
             NSLog(@"[DEBUG] could'nt create zip");
-            [zipArchive release];
-            zipArchive = nil;
             return nil;
         }            
     }
@@ -170,8 +159,6 @@
             NSLog(@"[DEBUG] zip opened");
         } else {
             NSLog(@"[DEBUG] could'nt create zip");
-            [zipArchive release];
-            zipArchive = nil;
             return nil;
         }            
     }
@@ -195,14 +182,8 @@
     NSLog(@"[DEBUG] close zip");
     if (zipArchive) {
         [zipArchive CloseZipFile2];
-        [zipArchive release];
     }
 }
 
--(void)dealloc
-{
-    NSLog(@"[DEBUG] dealloc zip");
-    [super dealloc];
-}
 
 @end
