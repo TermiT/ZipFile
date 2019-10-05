@@ -38,7 +38,7 @@
 		NSLog(@"[DEBUG] Can't find zip file");
 	}
 	
-	ZipArchive *zipArchive = [[ZipArchive alloc] init];
+	TiZipArchive *zipArchive = [[TiZipArchive alloc] init];
 	if([zipArchive UnzipOpenFile:file]) {
 		NSLog(@"[DEBUG] zip opened");
 		BOOL ret = [zipArchive UnzipFileTo:path overWrite: YES];
@@ -88,7 +88,7 @@
 -(id)initWithFile:(NSString*)path
 {
     if (self = [super init]) {
-        zipArchive = [[ZipArchive alloc] init];
+        zipArchive = [[TiZipArchive alloc] init];
         if ([zipArchive CreateZipFile2:path]) {
             NSLog(@"[DEBUG] zip opened");
         } else {
@@ -103,7 +103,7 @@
 -(id)initWithExistingFile:(NSString*)path
 {
     if (self = [super init]) {
-        zipArchive = [[ZipArchive alloc] init];
+        zipArchive = [[TiZipArchive alloc] init];
         if ([zipArchive OpenZipFile2:path]) {
             NSLog(@"[DEBUG] zip opened");
         } else {

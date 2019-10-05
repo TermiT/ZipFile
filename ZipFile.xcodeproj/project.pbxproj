@@ -35,8 +35,8 @@
 		6AE4707E1322D68C00B93C90 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE470751322D68C00B93C90 /* unzip.h */; };
 		6AE4707F1322D68C00B93C90 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470761322D68C00B93C90 /* zip.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6AE470801322D68C00B93C90 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE470771322D68C00B93C90 /* zip.h */; };
-		6AE470831322D69900B93C90 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE470811322D69900B93C90 /* ZipArchive.h */; };
-		6AE470841322D69900B93C90 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470821322D69900B93C90 /* ZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6AE470831322D69900B93C90 /* TiZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE470811322D69900B93C90 /* TiZipArchive.h */; };
+		6AE470841322D69900B93C90 /* TiZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AE470821322D69900B93C90 /* TiZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AA747D9F0F9514B9006C5449 /* Zipfile_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Zipfile_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -66,8 +66,8 @@
 		6AE470751322D68C00B93C90 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
 		6AE470761322D68C00B93C90 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
 		6AE470771322D68C00B93C90 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		6AE470811322D69900B93C90 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
-		6AE470821322D69900B93C90 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		6AE470811322D69900B93C90 /* TiZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiZipArchive.h; sourceTree = "<group>"; };
+		6AE470821322D69900B93C90 /* TiZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TiZipArchive.mm; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* Zipfile_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zipfile_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libZipfile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZipfile.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,8 +96,8 @@
 		0867D691FE84028FC02AAC07 /* zipfile */ = {
 			isa = PBXGroup;
 			children = (
-				6AE470811322D69900B93C90 /* ZipArchive.h */,
-				6AE470821322D69900B93C90 /* ZipArchive.mm */,
+				6AE470811322D69900B93C90 /* TiZipArchive.h */,
+				6AE470821322D69900B93C90 /* TiZipArchive.mm */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -166,7 +166,7 @@
 				6AE4707C1322D68C00B93C90 /* mztools.h in Headers */,
 				6AE4707E1322D68C00B93C90 /* unzip.h in Headers */,
 				6AE470801322D68C00B93C90 /* zip.h in Headers */,
-				6AE470831322D69900B93C90 /* ZipArchive.h in Headers */,
+				6AE470831322D69900B93C90 /* TiZipArchive.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +248,7 @@
 				6AE4707B1322D68C00B93C90 /* mztools.c in Sources */,
 				6AE4707D1322D68C00B93C90 /* unzip.c in Sources */,
 				6AE4707F1322D68C00B93C90 /* zip.c in Sources */,
-				6AE470841322D69900B93C90 /* ZipArchive.mm in Sources */,
+				6AE470841322D69900B93C90 /* TiZipArchive.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

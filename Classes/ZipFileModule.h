@@ -7,7 +7,7 @@
  * and licensed under the Apache Public License (version 2)
  */
 #import "TiModule.h"
-#import "ZipArchive.h"
+#import "TiZipArchive.h"
 
 @interface ZipfileModule : TiModule
 
@@ -15,7 +15,7 @@
 
 @interface ZipfileProxy : TiProxy {
 @private
-    ZipArchive *zipArchive;
+    TiZipArchive *zipArchive;
 }
 
 -(id)initWithFile:(NSString*)path_;
