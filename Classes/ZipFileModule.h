@@ -9,9 +9,7 @@
 #import "TiModule.h"
 #import "ZipArchive.h"
 
-@interface ZipfileModule : TiModule 
-{
-}
+@interface ZipfileModule : TiModule
 
 @end
 
@@ -21,6 +19,7 @@
 }
 
 -(id)initWithFile:(NSString*)path_;
+
 // Kosso added to enable opening an existing zip file to add files to
 -(id)initWithExistingFile:(NSString*)path_;
 
