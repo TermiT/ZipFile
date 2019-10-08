@@ -1,5 +1,9 @@
 build
-*.zip
+dist/*.zip
 *.mode1v3
 *.pbxuser
 *.perspectivev3
+ZipFile.xcodeproj/xcuserdata
+/.DS_Store
+ZipFile.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad/UserInterfaceState.xcuserstate
+ZipFile.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad/WorkspaceSettings.xcsettings

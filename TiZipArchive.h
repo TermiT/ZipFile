@@ -1,5 +1,5 @@
 //
-//  ZipArchive.h
+//  TiZipArchive.h
 //  
 //
 //  Created by aish on 08-9-11.
@@ -17,7 +17,7 @@
 #include "minizip/unzip.h"
 
 
-@protocol ZipArchiveDelegate <NSObject>
+@protocol TiZipArchiveDelegate <NSObject>
 @optional
 -(void) ErrorMessage:(NSString*) msg;
 -(BOOL) OverWriteOperation:(NSString*) file;
@@ -25,7 +25,7 @@
 @end
 
 
-@interface ZipArchive : NSObject {
+@interface TiZipArchive : NSObject {
 @private
 	zipFile		_zipFile;
 	unzFile		_unzFile;

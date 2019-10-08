@@ -7,20 +7,19 @@
  * and licensed under the Apache Public License (version 2)
  */
 #import "TiModule.h"
-#import "ZipArchive.h"
+#import "TiZipArchive.h"
 
-@interface ZipfileModule : TiModule 
-{
-}
+@interface ZipfileModule : TiModule
 
 @end
 
 @interface ZipfileProxy : TiProxy {
 @private
-    ZipArchive *zipArchive;
+    TiZipArchive *zipArchive;
 }
 
 -(id)initWithFile:(NSString*)path_;
+
 // Kosso added to enable opening an existing zip file to add files to
 -(id)initWithExistingFile:(NSString*)path_;
 

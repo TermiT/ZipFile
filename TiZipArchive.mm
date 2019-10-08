@@ -1,5 +1,5 @@
 //
-//  ZipArchive.mm
+//  TiZipArchive.mm
 //  
 //
 //  Created by aish on 08-9-11.
@@ -7,13 +7,13 @@
 //  Copyright 2008  Inc. All rights reserved.
 //
 
-#import "ZipArchive.h"
+#import "TiZipArchive.h"
 #import "zlib.h"
 #import "zconf.h"
 
 
 
-@interface ZipArchive (Private)
+@interface TiZipArchive (Private)
 
 -(void) OutputErrorMessage:(NSString*) msg;
 -(BOOL) OverWrite:(NSString*) file;
@@ -22,7 +22,7 @@
 
 
 
-@implementation ZipArchive
+@implementation TiZipArchive
 @synthesize delegate = _delegate;
 
 -(id) init
